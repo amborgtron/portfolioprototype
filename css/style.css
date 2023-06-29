@@ -1,0 +1,129 @@
+/* global */
+body {
+  margin: 20px;
+  background: #101812;
+}
+p {
+  font-family: Helvetica, sans-serif;
+}
+/* navbar */ 
+#navbar {
+  width: 100%;
+}
+#nav, #nav ul {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+#nav a {
+  display: block;
+  width: 130px;
+  text-decoration: none;
+  color:white;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+}
+#nav a:hover {
+  color:rgb(85, 85, 85);
+  text-decoration: underline;
+}
+#nav li {
+  float: right;
+  width: 90px;
+}
+#nav li ul{
+  position: absolute;
+  background: rgba(114, 114, 114, 0.75);
+  width: 80px;
+  left: -999em;
+}
+#nav li:hover ul {
+  left: auto;
+  background-color:rgba(88, 88, 88, 0.5);
+  border-radius: 5px;
+}
+/*header*/
+h1 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 75%;
+    line-height: 1;
+}
+h1, h2 {
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+header {
+    font-size: 75px;
+    line-height: 2; 
+}
+/* Grid */
+  .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: [col] 50% [col] 50%;
+      grid-template-rows: [row] 50% [row] 50% [row] 50% [row] 50%;
+    }
+  
+    .box {
+      background-color: #26352c;
+      color: #fff;
+      font-family: 'Caprasimo', cursive;
+      font-size: 200%;
+      border-radius: 1px;
+      padding: 10px;
+      text-align: center;
+      grid-template-rows: auto 1fr auto;
+    }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+/* Print */
+    .a {
+      grid-column: col / span 4;
+      grid-row: row ;
+      padding: 0;
+      margin: 0;
+    }
+/* Social */
+    .c {
+      grid-column: col ;
+      grid-row: row 2 
+    }
+/* Web */
+    .d {
+      grid-column: col 2 / span 3 ;
+      grid-row: row 2 ;
+    }
+/* Contact */
+    .e {
+      grid-column: col / span 4;
+      grid-row: row 3;
+    }
+    .e form {
+      font-family: Helvetica, sans-serif;
+      font-size: 50%;
+      margin: 10px;
+      line-height: 1;
+      text-align: left;
+    }
+/* Footer */
+.f {
+  grid-column: col / span 4;
+  grid-row: row 4;
+  background-color:rgb(22, 22, 22);
+  text-align: left;
+  }
+.socials {
+  float: right;
+}
